@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/Q250602/Form1.cs) (VB: [Form1.vb](./VB/Q250602/Form1.vb))
+* [MyGridControl.cs](./CS/Q250602/MyGridControl.cs) (VB: [MyGridControl.vb](./VB/Q250602/MyGridControl.vb))
+* [Program.cs](./CS/Q250602/Program.cs) (VB: [Program.vb](./VB/Q250602/Program.vb))
+<!-- default file list end -->
 # How to print group summary values under corresponding columns
 
 

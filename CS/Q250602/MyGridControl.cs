@@ -44,7 +44,7 @@ namespace DXSample {
     public class MyGridViewPrintInfo :GridViewPrintInfo {
         public MyGridViewPrintInfo(PrintInfoArgs args) : base(args) { }
 
-        protected virtual void DrawGroupTextBrick(IBrickGraphics graph, Rectangle bounds,
+        protected virtual void DrawGroupTextBrick(BrickGraphics graph, Rectangle bounds,
             int rowHandle) {
             string prefFormat = View.GroupFormat;
             View.GroupFormat = "{0}:{1}";
@@ -66,7 +66,7 @@ namespace DXSample {
                 string summaryText = string.Empty;
                 if (printSummaryInfo.TryGetValue(col.Column.FieldName, out summary)) 
                     summaryText = View.GetGroupSummaryDisplayText(rowHandle, summary);
-                ITextBrick summaryBrick = (ITextBrick)DrawTextBrick(graph, summaryText, groupCellBounds, false);
+                TextBrick summaryBrick = (TextBrick)DrawTextBrick(graph, summaryText, groupCellBounds, false);
                 if (summary != null && View.Columns[summary.FieldName].VisibleIndex == 0)
                     summaryBrick.HorzAlignment = HorzAlignment.Far;
                 summaryBrick.Padding = new PaddingInfo(5, 2, 0, 0);
@@ -84,7 +84,7 @@ namespace DXSample {
             Y += r.Height;
         }
 
-        public override void PrintRows(IBrickGraphics graph) {
+        public override void PrintRows(BrickGraphics graph) {
             PreparePrintSummaryInfo();
             base.PrintRows(graph);
         }

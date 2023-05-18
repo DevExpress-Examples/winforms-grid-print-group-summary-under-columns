@@ -109,7 +109,7 @@ Namespace DXSample
 			Y += r.Height
 		End Sub
 
-		Public Overrides Sub PrintRows(ByVal graph As IBrickGraphics)
+		Public Overrides Sub PrintRows(ByVal graph As BrickGraphics)
 			PreparePrintSummaryInfo()
 			MyBase.PrintRows(graph)
 		End Sub

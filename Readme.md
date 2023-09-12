@@ -8,7 +8,7 @@
 
 This example creates a custom grid control that prints group summary items under corresponding columns: 
 
-![](https://github.com/DevExpress-Examples/how-to-print-group-summary-values-under-corresponding-columns-e2084/blob/23.1.1%2B/media/winforms-grid-print-preview.png)
+![WinForms Data Grid - Print group summaries under corresponding columns](https://raw.githubusercontent.com/DevExpress-Examples/winforms-grid-print-group-summary-under-columns/23.1.1%2B/media/winforms-grid-print-preview.png)
 
 
 > **Important**
